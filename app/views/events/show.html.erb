@@ -1,0 +1,31 @@
+
+<div class="page-header">
+  <div class="pull-right">
+    <a class="btn btn-primary" <%= link_to 'Edit Event', edit_location_event_path(@location, @event) %></a>
+    <a class="btn btn-danger" <%= link_to 'Delete', location_event_path(@location, @event), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+  <h1><%= @event.description %></h1>
+</div>
+
+<ul class="breadcrumb">
+  <li><%= link_to "Locations", locations_path %></li>
+  <li><%= link_to "#{@location.name}", @location %></li>
+  <li class="active"><%= @event.description %></li>
+</ul>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <div class="col-md-4">
+      <h6>Event Date: </h6>
+      <%= @event.date %>
+    </div>
+    <div class="col-md-4">
+      <h6>Requires id: </h6>
+      <%= @event.requires_id %>
+    </div>
+    <div class="col-md-4">
+      <h6>Location: </h6>
+      <%= @location.name %>
+    </div>
+  </div>
+</form>

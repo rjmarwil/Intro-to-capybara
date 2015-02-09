@@ -6,6 +6,7 @@ class LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @events = @location.events
   end
 
   def new
@@ -34,8 +35,8 @@ class LocationsController < ApplicationController
     redirect_to location_path, :notice => "Location was successfully destroyed."
   end
 
-  def locations_params
-    params.require(:locations).permit(:name, :address, :zipcode)
+  def location_params
+    params.require(:location).permit(:name, :address, :zipcode)
   end
 
 end
