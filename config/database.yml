@@ -5,8 +5,8 @@ default: &default
 
 development:
  <<: *default
- database: danielweek5_development
+ database: capybara
 
 test:
  <<: *default
- database: danielweek5_test
+ database: capybara
