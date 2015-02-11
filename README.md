@@ -1,16 +1,33 @@
 The goal of this exercise is to practice testing a Rails Application using RSPEC and Capybara.
 
-Example specs have been setup for Home Page and Location create.
+Example specs have been setup for Home Page and creating a Location.
 
-Run all tests with command rspec.
+Bundle
+rake db:create db:migrate
 
-Run single tests with command rspec spec/directory/file_name.rb
+
+All Specs live in spec/features
+
+Each spec file is named in a way to identify what it is testing.
+home page specs live in a file named spec/features/home_page_spec.rb
+
+
+
+
+spec files need to require the following file:
+  require 'rails_helper'
+
+Run all specs with command rspec.
+
+Run specific tests with command rspec spec/directory/file_name.rb
   example: spec/features/home_page_spec.rb
 
 
 
-
 ## Test all of these things for Events and Locations.
+
+- Example tests for visiting home page and creating a location.
+
 
 ###### Home page
 - Users can visit homepage and see Locations

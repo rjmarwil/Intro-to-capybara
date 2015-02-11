@@ -1,4 +1,3 @@
-require 'spec_helper'
 require 'rails_helper'
 
 
@@ -41,7 +40,7 @@ describe 'User can CRUD locations' do
     #fill in
   end
 
-  
+
 
 
 
