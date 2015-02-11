@@ -23,6 +23,8 @@ Run specific tests with command rspec spec/directory/file_name.rb
   example: spec/features/home_page_spec.rb
 
 
+Capybara cheat sheet: https://gist.github.com/zhengjia/428105
+
 
 ## Test all of these things for Events and Locations.
 
