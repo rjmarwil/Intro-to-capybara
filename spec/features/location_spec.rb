@@ -4,7 +4,6 @@ require 'rails_helper'
 describe 'User can CRUD locations' do
 
   scenario 'User can create a Location' do
-
     # visit root
     visit '/'
 
@@ -12,7 +11,7 @@ describe 'User can CRUD locations' do
     click_on "New Location"
 
     #filling out form for location
-    fill_in 'location[name]', with: "Galvanize"
+    fill_in 'location[name]', :with => "Galvanize"
     fill_in 'location[address]', with: "New Address"
     fill_in 'location[zipcode]', with: "90210"
 
